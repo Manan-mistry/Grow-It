@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/617453bb3c.js" crossorigin="anonymous"></script>
+    <style>
+		form {
+			border: 3px solid #f1f1f1;
+			width:30%;
+			margin-left:450px;
+			margin-top:40px;
+		}
+
+		
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		input[type=password]:hover{
+			transition: 0.1s ease-in;
+			background-color: #F7F7F7;
+		}
+		input[type=text]:hover{
+			transition: 0.1s ease-in;
+			background-color: #F7F7F7;
+		}
+
+		
+		button {
+			background-color: #13A818;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			font-size: 20px; 
+		}
+
+		
+		button:hover {
+			background-color:#06930B; 
+			font-family: Helvetica;
+
+		}
+		label{
+			font-size: 15px;
+			font-family: Helvetica;
+		}
+
+		
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+
+		
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+		}
+
+		
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+
+		
+		.container {
+			padding: 16px;
+		}
+
+		
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+
+		
+		@media screen and (max-width: 300px) {
+			span.psw {
+				display: block;
+				float: none;
+			}
+			.cancelbtn {
+				width: 100%;
+			}
+		}
+	
+	</style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><i class="fab fa-pagelines" >Grow It!</i></a>
+             </div>
+             <nav>
+                 <ul id="MenuItems">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="product.html">Products</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                     <!-- <li><a href="account.html">Account</a></li> -->
+                 </ul>
+             </nav>
+             <a href="cart.html "><img src="images/cart.png" alt="cart" width="30px" height="30px"></a> 
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+      
+    </div>
+</div>
+</div>
+<div class="title">
+    <a href="account.php" id="btn1">Login Panel</a>
+</div>
+<!-- account page-->
+<!-- <div class="account-page"
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <!-- <img src="images/image1.png" width="100%">
+            </div>
+            <div style="margin: 0 55px;"class="col-2">
+               <div class="form-container">
+                   <div class="form-btn">
+                       <span onclick="login()">Login</span>
+                       <span onclick="register()">Register</span>
+                       <hr id="Indicator">
+                   </div>
+                   <form id="LoginForm"> 
+                       <input type="text" placeholder="Username">
+                       <input type="password" placeholder="Password">
+                       <button type="submit" class="btn">Login</button>
+                       <a href="">Forgot Password</a>
+                   </form>
+                   <form id="RegForm"> 
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Register</button>
+                </form>
+               </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+ 
+<!-- footer -->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Our Purpose Is to make a better world for better future.</p>
+                <div class="app-logo" style="display: flex;">
+                     <img src="images/play-store.png">
+                     <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <!-- <img src="images/logo-white.png"> -->
+                <span><i class="fab fa-pagelines" style="height: 20px;"><h6>Grow It!</h6> </i></span>
+                <p><p>Our Purpose Is to make a better world for better future.</p></p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow us</h3>
+                <ul>
+                    <il><a href="https://www.facebook.com" class="fa fa-facebook" target="_blank" rel="noopener"></a></li>
+                    <li><a href="https://www.twitter.com" class="fa fa-twitter" target="_blank" rel="noopener"></a></li>
+                     <li><a href="https://www.instagram.com" class="fa fa-instagram" target="_blank" rel="noopener"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright &copy; 2022</p>
+    </div>
+    </div>
+ </class>
+ <!-- ja for toggle menu -->
+  <script>
+      var MenuItems = document.getElementById("MenuItems")
+      MenuItems.style.maxHeight="0px";
+
+      function menutoggle(){
+          if(MenuItems.style.maxHeight=="0px")
+            {
+             MenuItems.style.maxHeight="200px";
+            } 
+          else
+            {
+                MenuItems.style.maxHeight="0px";
+            }
+      }
+  </script>
+ <!-- ja for toggle from -->
+ <script>
+     var LoginForm =  document.getElementById("LoginForm");
+     var RegForm =  document.getElementById("RegForm");
+     var Indicator =  document.getElementById("Indicator");
+      
+          function register(){
+            RegForm.style.transform="translateX(0px"; 
+            LoginForm.style.transform="translateX(0px"; 
+            Indicator.style.transform="translateX(100px";
+          }
+
+          function login(){
+            RegForm.style.transform="translateX(300px"; 
+            LoginForm.style.transform="translateX(300px"; 
+            Indicator.style.transform="translateX(0px";
+
+          }
+ </script>
+</body>
+</html>
